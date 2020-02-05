@@ -1,28 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import user from "./user";
+import persist from "./plugins/persist";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    counter: 0
+  modules: {
+    user
   },
-  getters: {
-    doubleCounter(state) {
-      return state.counter * 2;
-    }
-  },
-  mutations: {
-    add(state) {
-      state.counter++;
-    }
-  },
-  actions: {
-    add({ commit }) {
-      setTimeout(() => {
-        commit("add");
-      }, 1000);
-    }
-  },
-  modules: {}
+  strict: true, // 严格模式
+  plugins: [persist]
 });
