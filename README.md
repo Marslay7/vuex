@@ -4,7 +4,7 @@
 
 - Vuex 是一个专为 Vue.js 应用程序开发的**状态管理模式**。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以**可预测的方式发生变化**。
 
-<img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gblgujjvrfj30gz0cq0t6.jpg"  />
+![](https://tva1.sinaimg.cn/large/006tNbRwgy1gbllygi87gj30gz0cqq3d.jpg)
 
 > 安装：
 
